@@ -1,0 +1,120 @@
+html {
+  background-color: ghostwhite;
+}
+
+a {
+  color: royalblue;
+}
+
+body {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  nav > ul {
+    list-style: square;
+  }
+  nav > ul > li > a{
+    padding: 2px;
+    margin: inherit;
+  }
+}
+
+main {
+  width: 59.375%;
+  padding: 15px 1.5625%;
+}
+
+legend {
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+header {
+  width: 96.875%;
+  padding: 15px 1.5625%;
+  background-color: slategray;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#newsletter > input {
+}
+
+footer {
+  clear: both;
+  width: 96.875%;
+  padding: 15px 1.5625%;
+  font-size: 10px;
+  text-align: left;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+}
+
+footer > ul > li {
+  padding-left: 5px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul li {
+  flex: 10;
+  text-align: center;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  color: maroon;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+input, select {
+  width: 15em;
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 1px solid black;
+}
+
+#buttons input {
+  width: 20em;
+  height: 2em;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+}

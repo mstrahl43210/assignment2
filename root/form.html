@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Decent News</title>
+    <meta charset="UTF-8" name="author" content="Marcus Strahl">
+    <link rel="stylesheet" href="css/sheet1.css"></link>
+  </head>
+  <body>
+    <header>
+      <h1>Decent News Magazine</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h2>Sign Up</h2>
+      <form action="#" method="get" name="signUp" id="signUp">
+        <section id="SectionOne">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name1">First Name</label>
+            <input type="text" name="name1" id="name1" required autofocus placeholder="Steve"><br>
+            <label for="name2">Last Name</label>
+            <input type="text" name="name2" id="name2" required placeholder="Smith"><br>
+            <label for="state">State</label>
+            <input type="text" name="state" id="state" required placeholder="2-letter abbreviation" maxlength="2"><br>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" required placeholder="Placetown"><br>
+            <label for="zip">Zip Code</label>
+            <input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$"><br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" required placeholder="###-###-####" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be ###-###-#### format">
+          </fieldset>
+          <fieldset>
+            <legend>Log-in Information</legend>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" required placeholder="address@website.com"><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required placeholder="6 or more letters/numbers" pattern="[a-zA-Z0-9]{6,}" title="Must be at least 6 alphanumeric characters"><br>
+            <label for="verify">Verify Password</label>
+            <input type="password" name="verify" id="verify" required placeholder="same as above"><br>
+          </fieldset>
+          <fieldset id="newsletter">
+            <legend>How would you like to receive our monthly newsletter?</legend>
+            <input type="radio" name="newsletter" value="digital">
+              Digitally
+            <br><input type="radio" name="newsletter" value="mail">
+              By mail
+          </fieldset>
+          <fieldset id="buttons">
+            <input type="submit" id="submit" value="Submit">
+          </fieldset>
+        </section>
+      </form>
+    </main>
+    <footer>
+      <p class="copy-info">&copy; Marcus Strahl, 2017</p>
+      <ul>
+        <li>
+          <a href="#">Facebook Page</a>
+        </li>
+        <li>
+          <a href="#">Twitter Page</a>
+        </li>
+        <li>
+          <a href="#">Reddit Page</a>
+        </li>
+      </ul>
+      </p>
+    </footer>
+  </body>
+</html>
